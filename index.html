@@ -15,12 +15,21 @@
       tailwind.config = {
         theme: {
           extend: {
-            colors: {
-              ink: {
-                950: "#070A12",
-                900: "#0B1020",
-                800: "#111A35",
-              },
+            fontFamily: {
+              sans: [
+                "ui-sans-serif",
+                "system-ui",
+                "-apple-system",
+                "BlinkMacSystemFont",
+                '"SF Pro Display"',
+                '"SF Pro Text"',
+                '"Segoe UI"',
+                "Roboto",
+                "Helvetica",
+                "Arial",
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+              ],
             },
           },
         },
@@ -31,23 +40,26 @@
       html {
         scroll-behavior: smooth;
       }
+      ::selection {
+        background: rgba(0, 0, 0, 0.1);
+      }
     </style>
   </head>
-  <body class="bg-ink-950 text-white antialiased">
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-ink-950/70 backdrop-blur">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <a href="#top" class="font-semibold tracking-tight">
-          <span class="text-white">Aditya</span><span class="text-white/60">Verma</span>
+  <body class="bg-white text-neutral-900 antialiased">
+    <header class="sticky top-0 z-50 border-b border-black/10 bg-white/80 backdrop-blur">
+      <div class="mx-auto flex max-w-[980px] items-center justify-between px-4 py-3">
+        <a href="#top" class="text-sm font-semibold tracking-tight">
+          <span>Aditya</span><span class="text-neutral-500">Verma</span>
         </a>
-        <nav class="hidden gap-6 text-sm text-white/75 md:flex">
-          <a class="hover:text-white" href="#about">About</a>
-          <a class="hover:text-white" href="#focus">Focus</a>
-          <a class="hover:text-white" href="#stack">Stack</a>
-          <a class="hover:text-white" href="#links">Links</a>
+        <nav class="hidden gap-6 text-sm text-neutral-600 md:flex">
+          <a class="hover:text-neutral-950" href="#about">About</a>
+          <a class="hover:text-neutral-950" href="#focus">Focus</a>
+          <a class="hover:text-neutral-950" href="#stack">Stack</a>
+          <a class="hover:text-neutral-950" href="#links">Links</a>
         </nav>
         <div class="flex items-center gap-2">
           <a
-            class="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium text-white/90 hover:bg-white/10"
+            class="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50"
             href="https://www.linkedin.com/in/aditverm/"
             target="_blank"
             rel="noreferrer"
@@ -59,41 +71,31 @@
     </header>
 
     <main id="top">
-      <section class="relative overflow-hidden">
-        <div class="absolute inset-0 -z-10">
-          <div
-            class="absolute -left-24 -top-40 h-[520px] w-[520px] rounded-full bg-gradient-to-tr from-indigo-500/40 via-fuchsia-500/25 to-cyan-400/20 blur-3xl"
-          ></div>
-          <div
-            class="absolute -right-24 top-28 h-[520px] w-[520px] rounded-full bg-gradient-to-tr from-cyan-400/25 via-blue-500/20 to-violet-500/30 blur-3xl"
-          ></div>
-          <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_10%,rgba(255,255,255,0.08),transparent_55%)]"></div>
-        </div>
-
-        <div class="mx-auto max-w-6xl px-4 py-20 md:py-28">
-          <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/75">
+      <section class="border-b border-black/5">
+        <div class="mx-auto max-w-[980px] px-4 py-16 md:py-24">
+          <p class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-neutral-50 px-4 py-2 text-xs font-medium text-neutral-600">
             Software Engineering Leader • AI/ML Practitioner
           </p>
 
-          <h1 class="mt-6 text-4xl font-semibold tracking-tight md:text-6xl">
-            Hi, I’m <span class="bg-gradient-to-r from-white via-white to-white/70 bg-clip-text text-transparent">Aditya</span>.
+          <h1 class="mt-6 text-4xl font-semibold tracking-tight text-neutral-950 md:text-6xl">
+            Hi, I’m Aditya.
           </h1>
 
-          <p class="mt-5 max-w-2xl text-lg leading-relaxed text-white/70">
+          <p class="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-600">
             15+ years of experience building scalable systems and leading engineering teams at
-            <span class="font-medium text-white/85">Tesla</span> and <span class="font-medium text-white/85">Oracle</span>.
-            Passionate about <span class="font-medium text-white/85">AI Engineering</span>.
+            <span class="font-semibold text-neutral-900">Tesla</span> and <span class="font-semibold text-neutral-900">Oracle</span>.
+            Passionate about <span class="font-semibold text-neutral-900">AI Engineering</span>.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">
             <a
-              class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-ink-950 hover:bg-white/90"
+              class="rounded-full bg-neutral-950 px-5 py-3 text-sm font-semibold text-white hover:bg-neutral-800"
               href="#about"
             >
               Explore profile
             </a>
             <a
-              class="rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white/90 hover:bg-white/10"
+              class="rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50"
               href="#links"
             >
               Contact & links
@@ -101,49 +103,49 @@
           </div>
 
           <div class="mt-10 grid gap-4 md:grid-cols-3">
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p class="text-sm text-white/60">Strength</p>
-              <p class="mt-1 font-semibold">Engineering leadership</p>
-              <p class="mt-2 text-sm text-white/70">Scalable architecture, execution, and mentoring.</p>
+            <div class="rounded-2xl border border-black/10 bg-neutral-50 p-6 shadow-sm">
+              <p class="text-xs font-semibold text-neutral-500">Strength</p>
+              <p class="mt-2 font-semibold text-neutral-950">Engineering leadership</p>
+              <p class="mt-2 text-sm text-neutral-600">Scalable architecture, execution, and mentoring.</p>
             </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p class="text-sm text-white/60">Focus</p>
-              <p class="mt-1 font-semibold">AI engineering</p>
-              <p class="mt-2 text-sm text-white/70">LLM frameworks, agentic systems, evaluation & observability.</p>
+            <div class="rounded-2xl border border-black/10 bg-neutral-50 p-6 shadow-sm">
+              <p class="text-xs font-semibold text-neutral-500">Focus</p>
+              <p class="mt-2 font-semibold text-neutral-950">AI engineering</p>
+              <p class="mt-2 text-sm text-neutral-600">LLM frameworks, agentic systems, evaluation & observability.</p>
             </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p class="text-sm text-white/60">Platform</p>
-              <p class="mt-1 font-semibold">Cloud & MLOps</p>
-              <p class="mt-2 text-sm text-white/70">Kubernetes, Docker, IaC, CI/CD, and multi-cloud.</p>
+            <div class="rounded-2xl border border-black/10 bg-neutral-50 p-6 shadow-sm">
+              <p class="text-xs font-semibold text-neutral-500">Platform</p>
+              <p class="mt-2 font-semibold text-neutral-950">Cloud & MLOps</p>
+              <p class="mt-2 text-sm text-neutral-600">Kubernetes, Docker, IaC, CI/CD, and multi-cloud.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="mx-auto max-w-6xl px-4 py-16">
+      <section id="about" class="mx-auto max-w-[980px] px-4 py-16">
         <div class="grid gap-10 md:grid-cols-5 md:items-start">
           <div class="md:col-span-2">
-            <h2 class="text-2xl font-semibold tracking-tight">About</h2>
-            <p class="mt-3 text-white/70">
+            <h2 class="text-2xl font-semibold tracking-tight text-neutral-950">About</h2>
+            <p class="mt-3 text-neutral-600">
               I’m a software engineering leader and AI/ML practitioner who enjoys turning ambiguous problems into
               reliable systems. I care about clean architecture, measurable outcomes, and teams that ship.
             </p>
           </div>
           <div class="md:col-span-3">
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <p class="text-sm font-medium text-white/60">Snapshot</p>
-              <ul class="mt-4 grid gap-3 text-sm text-white/75 md:grid-cols-2">
-                <li class="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-                  <span class="font-semibold text-white/90">15+ years</span> building scalable systems
+            <div class="rounded-2xl border border-black/10 bg-neutral-50 p-6 shadow-sm">
+              <p class="text-sm font-semibold text-neutral-500">Snapshot</p>
+              <ul class="mt-4 grid gap-3 text-sm text-neutral-700 md:grid-cols-2">
+                <li class="rounded-xl border border-black/10 bg-white px-4 py-3">
+                  <span class="font-semibold text-neutral-900">15+ years</span> building scalable systems
                 </li>
-                <li class="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-                  Led teams at <span class="font-semibold text-white/90">Tesla</span> and <span class="font-semibold text-white/90">Oracle</span>
+                <li class="rounded-xl border border-black/10 bg-white px-4 py-3">
+                  Led teams at <span class="font-semibold text-neutral-900">Tesla</span> and <span class="font-semibold text-neutral-900">Oracle</span>
                 </li>
-                <li class="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-                  Special interest: <span class="font-semibold text-white/90">agentic AI</span>
+                <li class="rounded-xl border border-black/10 bg-white px-4 py-3">
+                  Special interest: <span class="font-semibold text-neutral-900">agentic AI</span>
                 </li>
-                <li class="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-                  Outside work: <span class="font-semibold text-white/90">hiking</span>, <span class="font-semibold text-white/90">camping</span>, <span class="font-semibold text-white/90">photography</span>
+                <li class="rounded-xl border border-black/10 bg-white px-4 py-3">
+                  Outside work: <span class="font-semibold text-neutral-900">hiking</span>, <span class="font-semibold text-neutral-900">camping</span>, <span class="font-semibold text-neutral-900">photography</span>
                 </li>
               </ul>
             </div>
@@ -151,53 +153,53 @@
         </div>
       </section>
 
-      <section id="focus" class="mx-auto max-w-6xl px-4 py-16">
+      <section id="focus" class="mx-auto max-w-[980px] px-4 py-16">
         <div class="flex items-end justify-between gap-4">
           <div>
-            <h2 class="text-2xl font-semibold tracking-tight">Current focus</h2>
-            <p class="mt-2 max-w-2xl text-white/70">
+            <h2 class="text-2xl font-semibold tracking-tight text-neutral-950">Current focus</h2>
+            <p class="mt-2 max-w-2xl text-neutral-600">
               Building AI systems that are production-ready: observable, evaluated, secure, and cost-aware.
             </p>
           </div>
         </div>
         <div class="mt-8 grid gap-4 md:grid-cols-3">
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p class="text-sm font-semibold">LLM frameworks</p>
-            <p class="mt-2 text-sm text-white/70">LangChain, LangGraph, OpenAI Agents SDK, AutoGen, CrewAI</p>
+          <div class="rounded-2xl border border-black/10 bg-neutral-50 p-6 shadow-sm">
+            <p class="text-sm font-semibold text-neutral-950">LLM frameworks</p>
+            <p class="mt-2 text-sm text-neutral-600">LangChain, LangGraph, OpenAI Agents SDK, AutoGen, CrewAI</p>
           </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p class="text-sm font-semibold">Evaluation & observability</p>
-            <p class="mt-2 text-sm text-white/70">LangSmith, LangFuse, Weights & Biases</p>
+          <div class="rounded-2xl border border-black/10 bg-neutral-50 p-6 shadow-sm">
+            <p class="text-sm font-semibold text-neutral-950">Evaluation & observability</p>
+            <p class="mt-2 text-sm text-neutral-600">LangSmith, LangFuse, Weights & Biases</p>
           </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p class="text-sm font-semibold">Deployment</p>
-            <p class="mt-2 text-sm text-white/70">Containers, Kubernetes, CI/CD, and multi-cloud platforms</p>
+          <div class="rounded-2xl border border-black/10 bg-neutral-50 p-6 shadow-sm">
+            <p class="text-sm font-semibold text-neutral-950">Deployment</p>
+            <p class="mt-2 text-sm text-neutral-600">Containers, Kubernetes, CI/CD, and multi-cloud platforms</p>
           </div>
         </div>
       </section>
 
-      <section id="stack" class="mx-auto max-w-6xl px-4 py-16">
+      <section id="stack" class="mx-auto max-w-[980px] px-4 py-16">
         <div class="grid gap-6 md:grid-cols-2 md:items-start">
           <div>
-            <h2 class="text-2xl font-semibold tracking-tight">Technologies & tools</h2>
-            <p class="mt-2 text-white/70">A quick overview based on your GitHub profile README.</p>
+            <h2 class="text-2xl font-semibold tracking-tight text-neutral-950">Technologies & tools</h2>
+            <p class="mt-2 text-neutral-600">A quick overview based on your GitHub profile README.</p>
           </div>
-          <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="rounded-2xl border border-black/10 bg-neutral-50 p-6 shadow-sm">
             <div class="grid gap-5">
               <div>
-                <p class="text-sm font-semibold">AI / Machine Learning</p>
-                <p class="mt-2 text-sm text-white/70">
-                  <span class="font-medium text-white/85">LLM Frameworks</span>: LangChain, LangGraph, OpenAI Agents SDK, AutoGen, CrewAI, LangSmith, LangFuse<br />
-                  <span class="font-medium text-white/85">Deep Learning</span>: PyTorch, Transformers, TensorRT<br />
-                  <span class="font-medium text-white/85">ML Ecosystem</span>: Scikit-Learn, Weights &amp; Biases, MCP
+                <p class="text-sm font-semibold text-neutral-950">AI / Machine Learning</p>
+                <p class="mt-2 text-sm text-neutral-600">
+                  <span class="font-semibold text-neutral-900">LLM Frameworks</span>: LangChain, LangGraph, OpenAI Agents SDK, AutoGen, CrewAI, LangSmith, LangFuse<br />
+                  <span class="font-semibold text-neutral-900">Deep Learning</span>: PyTorch, Transformers, TensorRT<br />
+                  <span class="font-semibold text-neutral-900">ML Ecosystem</span>: Scikit-Learn, Weights &amp; Biases, MCP
                 </p>
               </div>
-              <div class="h-px bg-white/10"></div>
+              <div class="h-px bg-black/10"></div>
               <div>
-                <p class="text-sm font-semibold">Cloud & MLOps</p>
-                <p class="mt-2 text-sm text-white/70">
-                  <span class="font-medium text-white/85">Platforms</span>: AWS, GCP, Azure<br />
-                  <span class="font-medium text-white/85">Infrastructure</span>: Kubernetes, Docker, Terraform, GitHub Actions, AWS CDK
+                <p class="text-sm font-semibold text-neutral-950">Cloud & MLOps</p>
+                <p class="mt-2 text-sm text-neutral-600">
+                  <span class="font-semibold text-neutral-900">Platforms</span>: AWS, GCP, Azure<br />
+                  <span class="font-semibold text-neutral-900">Infrastructure</span>: Kubernetes, Docker, Terraform, GitHub Actions, AWS CDK
                 </p>
               </div>
             </div>
@@ -205,18 +207,18 @@
         </div>
       </section>
 
-      <section id="links" class="mx-auto max-w-6xl px-4 py-16">
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+      <section id="links" class="mx-auto max-w-[980px] px-4 py-16">
+        <div class="rounded-2xl border border-black/10 bg-neutral-50 p-8 shadow-sm">
           <div class="grid gap-8 md:grid-cols-2 md:items-center">
             <div>
-              <h2 class="text-2xl font-semibold tracking-tight">Links</h2>
-              <p class="mt-2 text-white/70">
+              <h2 class="text-2xl font-semibold tracking-tight text-neutral-950">Links</h2>
+              <p class="mt-2 text-neutral-600">
                 Want to collaborate, talk AI engineering, or compare notes on building scalable systems?
               </p>
             </div>
             <div class="flex flex-wrap gap-3 md:justify-end">
               <a
-                class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-ink-950 hover:bg-white/90"
+                class="rounded-full bg-neutral-950 px-5 py-3 text-sm font-semibold text-white hover:bg-neutral-800"
                 href="https://www.linkedin.com/in/aditverm/"
                 target="_blank"
                 rel="noreferrer"
@@ -224,7 +226,7 @@
                 LinkedIn
               </a>
               <a
-                class="rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white/90 hover:bg-white/10"
+                class="rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50"
                 href="https://github.com/aditya-caltechie"
                 target="_blank"
                 rel="noreferrer"
@@ -232,7 +234,7 @@
                 GitHub
               </a>
               <a
-                class="rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white/90 hover:bg-white/10"
+                class="rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50"
                 href="https://flickr.com/photos/80153570@N06/"
                 target="_blank"
                 rel="noreferrer"
@@ -242,29 +244,29 @@
             </div>
           </div>
           <div class="mt-8 grid gap-4 md:grid-cols-3">
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <p class="text-sm font-semibold">Open to</p>
-              <p class="mt-2 text-sm text-white/70">AI engineering, platform architecture, leadership roles, mentorship.</p>
+            <div class="rounded-2xl border border-black/10 bg-white p-6">
+              <p class="text-sm font-semibold text-neutral-950">Open to</p>
+              <p class="mt-2 text-sm text-neutral-600">AI engineering, platform architecture, leadership roles, mentorship.</p>
             </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <p class="text-sm font-semibold">Interests</p>
-              <p class="mt-2 text-sm text-white/70">Agentic systems, evaluation, reliability, and MLOps.</p>
+            <div class="rounded-2xl border border-black/10 bg-white p-6">
+              <p class="text-sm font-semibold text-neutral-950">Interests</p>
+              <p class="mt-2 text-sm text-neutral-600">Agentic systems, evaluation, reliability, and MLOps.</p>
             </div>
-            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <p class="text-sm font-semibold">Outside work</p>
-              <p class="mt-2 text-sm text-white/70">Hiking, camping, and photography.</p>
+            <div class="rounded-2xl border border-black/10 bg-white p-6">
+              <p class="text-sm font-semibold text-neutral-950">Outside work</p>
+              <p class="mt-2 text-sm text-neutral-600">Hiking, camping, and photography.</p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-white/10">
-      <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-10 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
+    <footer class="border-t border-black/10">
+      <div class="mx-auto flex max-w-[980px] flex-col gap-4 px-4 py-10 text-sm text-neutral-500 md:flex-row md:items-center md:justify-between">
         <p>© <span id="year"></span> Aditya Verma. All rights reserved.</p>
         <div class="flex gap-4">
-          <a class="hover:text-white" href="#top">Back to top</a>
-          <a class="hover:text-white" href="https://github.com/aditya-caltechie" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="hover:text-neutral-950" href="#top">Back to top</a>
+          <a class="hover:text-neutral-950" href="https://github.com/aditya-caltechie" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </footer>
