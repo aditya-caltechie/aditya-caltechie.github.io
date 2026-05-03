@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Technical skills and tools — AI/ML, programming, cloud & MLOps, data & distributed systems. Aditya Verma."
+    />
+    <title>Technical skills | Aditya Verma</title>
+    <meta name="theme-color" content="#fafafa" />
+    <link rel="icon" href="images/github-avatar.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/github-avatar.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                "ui-sans-serif",
+                "system-ui",
+                "-apple-system",
+                "BlinkMacSystemFont",
+                '"SF Pro Display"',
+                '"SF Pro Text"',
+                '"Segoe UI"',
+                "Roboto",
+                "Helvetica",
+                "Arial",
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+              ],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      ::selection {
+        background: rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-neutral-50 font-sans text-neutral-900 antialiased">
+    <header class="sticky top-0 z-50 border-b border-black/[0.06] bg-white/85 backdrop-blur-md backdrop-saturate-150">
+      <div class="mx-auto flex max-w-[980px] items-center justify-between px-4 py-3.5">
+        <a href="index.html#top" class="text-sm font-semibold tracking-tight">
+          <span>Aditya</span><span class="text-neutral-500">Verma</span>
+        </a>
+        <nav class="hidden gap-7 text-sm text-neutral-600 md:flex">
+          <a class="transition-colors duration-200 hover:text-neutral-950" href="index.html#about">About</a>
+          <a class="transition-colors duration-200 hover:text-neutral-950" href="index.html#leadership">Leadership</a>
+          <a class="font-semibold text-neutral-950" href="technical-skills.html" aria-current="page">Skills</a>
+          <a class="transition-colors duration-200 hover:text-neutral-950" href="index.html#projects">Projects</a>
+          <a class="transition-colors duration-200 hover:text-neutral-950" href="index.html#links">Links</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a
+            class="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-neutral-900 shadow-sm hover:bg-neutral-50"
+            href="https://www.linkedin.com/in/aditverm/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section id="stack" class="border-b border-black/[0.04] bg-white py-16 md:py-24">
+        <div class="mx-auto max-w-[980px] px-4">
+          <p class="text-sm text-neutral-500">
+            <a href="index.html" class="font-medium text-neutral-700 underline-offset-4 hover:text-neutral-950 hover:underline">Home</a>
+            <span class="mx-2 text-neutral-400" aria-hidden="true">/</span>
+            <span class="text-neutral-900">Technical skills</span>
+          </p>
+          <div class="mt-6">
+            <h1 class="text-2xl font-semibold tracking-tight text-neutral-950 md:text-[1.65rem]">Technologies & tools</h1>
+            <p class="mt-2 max-w-2xl text-neutral-600">A curated overview of core tools and technologies.</p>
+          </div>
+
+          <div class="mt-8 grid grid-cols-2 items-stretch gap-3 sm:gap-4 md:gap-6">
+            <div class="flex h-full flex-col rounded-2xl border border-violet-200/60 bg-violet-50/70 p-5 shadow-sm ring-1 ring-violet-900/[0.03] transition-shadow duration-300 hover:shadow-md sm:p-6">
+              <p class="text-sm font-semibold text-neutral-950">AI / Machine Learning</p>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+                <span class="font-semibold text-neutral-900">Frameworks</span>: LangChain, LangGraph, CrewAI, OpenAI SDK<br />
+                <span class="font-semibold text-neutral-900">Deep Learning</span>: PyTorch, Transformers<br />
+                <span class="font-semibold text-neutral-900">Fine-Tuning</span>: PEFT (LoRA), TRL, BitsAndBytes<br />
+                <span class="font-semibold text-neutral-900">Observability</span>: LangSmith, LangFuse, Weights &amp; Biases
+              </p>
+            </div>
+            <div class="flex h-full flex-col rounded-2xl border border-sky-200/60 bg-sky-50/70 p-5 shadow-sm ring-1 ring-sky-900/[0.03] transition-shadow duration-300 hover:shadow-md sm:p-6">
+              <p class="text-sm font-semibold text-neutral-950">Programming</p>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+                <span class="font-semibold text-neutral-900">Languages</span>: Python, Golang, C/C++, JavaScript, TypeScript<br />
+                <span class="font-semibold text-neutral-900">Frameworks</span>: React, FastAPI, Django, Flask, asyncio, Streamlit
+              </p>
+            </div>
+            <div class="flex h-full flex-col rounded-2xl border border-emerald-200/60 bg-emerald-50/70 p-5 shadow-sm ring-1 ring-emerald-900/[0.03] transition-shadow duration-300 hover:shadow-md sm:p-6">
+              <p class="text-sm font-semibold text-neutral-950">Cloud & MLOps</p>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+                <span class="font-semibold text-neutral-900">Platforms</span>: AWS, GCP, Azure<br />
+                <span class="font-semibold text-neutral-900">Infrastructure</span>: Kubernetes, Docker, Terraform, CI/CD<br />
+                <span class="font-semibold text-neutral-900">Observability</span>: OpenTelemetry, Prometheus, Grafana
+              </p>
+            </div>
+            <div class="flex h-full flex-col rounded-2xl border border-amber-200/60 bg-amber-50/70 p-5 shadow-sm ring-1 ring-amber-900/[0.03] transition-shadow duration-300 hover:shadow-md sm:p-6">
+              <p class="text-sm font-semibold text-neutral-950">Data &amp; Distributed Systems</p>
+              <p class="mt-2 text-sm leading-relaxed text-neutral-700">
+                <span class="font-semibold text-neutral-900">Databases</span>: PostgreSQL, MySQL, Cassandra, Aurora, Mimir.<br />
+                <span class="font-semibold text-neutral-900">Streaming/Messaging</span>: Kafka, Redis, Proto Buffs.<br />
+                <span class="font-semibold text-neutral-900">Data Scaling</span>: PySpark, MRJobs, gRPC.<br />
+                <span class="font-semibold text-neutral-900">Communication</span>: REST APIs, gRPC, WebSocket.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-black/[0.06] bg-white">
+      <div class="mx-auto flex max-w-[980px] flex-col gap-4 px-4 py-10 text-sm text-neutral-500 md:flex-row md:items-center md:justify-between">
+        <p>© <span id="year"></span> Aditya Verma. All rights reserved.</p>
+        <div class="flex flex-wrap gap-4">
+          <a class="hover:text-neutral-950" href="index.html">Home</a>
+          <a class="hover:text-neutral-950" href="#top">Back to top</a>
+          <a class="hover:text-neutral-950" href="https://github.com/aditya-caltechie" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
